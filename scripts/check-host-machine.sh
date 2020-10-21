@@ -9,8 +9,6 @@ function checkVariablePresence() {
   fi
 }
 
-checkVariablePresence "ANDROID_SDK_HOME" \
-  "The variable should be set to the actual Android SDK path" || exit 1
-
-checkVariablePresence "ANDROID_NDK_HOME" \
-  "The variable should be set to the actual Android NDK path" || exit 1
+#https://github.com/Javernaut/ffmpeg-android-maker/issues/40
+export ANDROID_SDK_HOME=/Users/vladlen/Library/Android/sdk
+export ANDROID_NDK_HOME=/Users/vladlen/Library/Android/sdk/ndk/21.3.6528147
