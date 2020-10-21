@@ -8,6 +8,11 @@ export BASE_DIR="$( cd "$( dirname "$0" )" && pwd )"
 # Each library has its own subdirectory
 # Multiple versions of the same library can be stored inside librarie's directory
 export SOURCES_DIR=${BASE_DIR}/sources
+
+#https://github.com/Javernaut/ffmpeg-android-maker/issues/40
+export ANDROID_SDK_HOME=/Users/vladlen/Library/Android/sdk
+export ANDROID_NDK_HOME=/Users/vladlen/Library/Android/sdk/ndk/21.3.6528147
+
 # Directory to place some statistics about the build.
 # Currently - the info about Text Relocations
 export STATS_DIR=${BASE_DIR}/stats
